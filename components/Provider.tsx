@@ -1,5 +1,9 @@
-export default function Provider() {
+import { SessionProvider } from "next-auth/react";
+
+export default function Provider({ children, session }) {
   return (
-    <h1>Provider</h1>
+    <SessionProvider session={session}>
+      {children}
+    </SessionProvider>
   )
 }

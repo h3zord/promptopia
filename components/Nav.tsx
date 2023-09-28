@@ -71,6 +71,8 @@ export default function Nav() {
         }
       </div>
 
+        {/* Mobile Devices */}
+        
       <div className="sm:hidden flex relative">
         {
           isUserLoggedIn ? (
